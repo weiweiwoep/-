@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD52413D1AE8DF7A00FA0519 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD52413C1AE8DF7A00FA0519 /* main.m */; };
-		FD5241401AE8DF7A00FA0519 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD52413F1AE8DF7A00FA0519 /* AppDelegate.m */; };
-		FD5241431AE8DF7A00FA0519 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241421AE8DF7A00FA0519 /* ViewController.m */; };
-		FD5241461AE8DF7A00FA0519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5241441AE8DF7A00FA0519 /* Main.storyboard */; };
 		FD5241481AE8DF7A00FA0519 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5241471AE8DF7A00FA0519 /* Images.xcassets */; };
 		FD52414B1AE8DF7A00FA0519 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD5241491AE8DF7A00FA0519 /* LaunchScreen.xib */; };
 		FD5241571AE8DF7A00FA0519 /* SinaWeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241561AE8DF7A00FA0519 /* SinaWeiBoTests.m */; };
+		FD5241641AE8E36E00FA0519 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241621AE8E36E00FA0519 /* AppDelegate.m */; };
+		FD5241651AE8E36E00FA0519 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241631AE8E36E00FA0519 /* main.m */; };
+		FD52416C1AE8FEE200FA0519 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD52416B1AE8FEE200FA0519 /* HomeViewController.m */; };
+		FD52416F1AE8FEF600FA0519 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD52416E1AE8FEF600FA0519 /* MessageViewController.m */; };
+		FD5241721AE8FF1700FA0519 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241711AE8FF1700FA0519 /* DiscoverViewController.m */; };
+		FD5241751AE8FF2900FA0519 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241741AE8FF2900FA0519 /* ProfileViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,17 +31,23 @@
 /* Begin PBXFileReference section */
 		FD5241371AE8DF7A00FA0519 /* SinaWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD52413B1AE8DF7A00FA0519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD52413C1AE8DF7A00FA0519 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FD52413E1AE8DF7A00FA0519 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FD52413F1AE8DF7A00FA0519 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FD5241411AE8DF7A00FA0519 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FD5241421AE8DF7A00FA0519 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FD5241451AE8DF7A00FA0519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD5241471AE8DF7A00FA0519 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FD52414A1AE8DF7A00FA0519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FD5241501AE8DF7A00FA0519 /* SinaWeiBoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SinaWeiBoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD5241551AE8DF7A00FA0519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD5241561AE8DF7A00FA0519 /* SinaWeiBoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SinaWeiBoTests.m; sourceTree = "<group>"; };
+		FD5241611AE8E36E00FA0519 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FD5241621AE8E36E00FA0519 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FD5241631AE8E36E00FA0519 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD5241661AE8E5C600FA0519 /* SinaWeiBo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SinaWeiBo-Prefix.pch"; sourceTree = "<group>"; };
+		FD52416A1AE8FEE200FA0519 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		FD52416B1AE8FEE200FA0519 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		FD52416D1AE8FEF600FA0519 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		FD52416E1AE8FEF600FA0519 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		FD5241701AE8FF1700FA0519 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		FD5241711AE8FF1700FA0519 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		FD5241731AE8FF2900FA0519 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		FD5241741AE8FF2900FA0519 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,12 +89,7 @@
 		FD5241391AE8DF7A00FA0519 /* SinaWeiBo */ = {
 			isa = PBXGroup;
 			children = (
-				FD52413E1AE8DF7A00FA0519 /* AppDelegate.h */,
-				FD52413F1AE8DF7A00FA0519 /* AppDelegate.m */,
-				FD5241411AE8DF7A00FA0519 /* ViewController.h */,
-				FD5241421AE8DF7A00FA0519 /* ViewController.m */,
-				FD5241441AE8DF7A00FA0519 /* Main.storyboard */,
-				FD5241471AE8DF7A00FA0519 /* Images.xcassets */,
+				FD5241601AE8E36E00FA0519 /* Classes */,
 				FD5241491AE8DF7A00FA0519 /* LaunchScreen.xib */,
 				FD52413A1AE8DF7A00FA0519 /* Supporting Files */,
 			);
@@ -96,8 +99,9 @@
 		FD52413A1AE8DF7A00FA0519 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FD5241471AE8DF7A00FA0519 /* Images.xcassets */,
 				FD52413B1AE8DF7A00FA0519 /* Info.plist */,
-				FD52413C1AE8DF7A00FA0519 /* main.m */,
+				FD5241661AE8E5C600FA0519 /* SinaWeiBo-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +121,24 @@
 				FD5241551AE8DF7A00FA0519 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD5241601AE8E36E00FA0519 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FD5241611AE8E36E00FA0519 /* AppDelegate.h */,
+				FD5241621AE8E36E00FA0519 /* AppDelegate.m */,
+				FD5241631AE8E36E00FA0519 /* main.m */,
+				FD52416A1AE8FEE200FA0519 /* HomeViewController.h */,
+				FD52416B1AE8FEE200FA0519 /* HomeViewController.m */,
+				FD52416D1AE8FEF600FA0519 /* MessageViewController.h */,
+				FD52416E1AE8FEF600FA0519 /* MessageViewController.m */,
+				FD5241701AE8FF1700FA0519 /* DiscoverViewController.h */,
+				FD5241711AE8FF1700FA0519 /* DiscoverViewController.m */,
+				FD5241731AE8FF2900FA0519 /* ProfileViewController.h */,
+				FD5241741AE8FF2900FA0519 /* ProfileViewController.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +221,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD5241461AE8DF7A00FA0519 /* Main.storyboard in Resources */,
 				FD52414B1AE8DF7A00FA0519 /* LaunchScreen.xib in Resources */,
 				FD5241481AE8DF7A00FA0519 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD5241431AE8DF7A00FA0519 /* ViewController.m in Sources */,
-				FD5241401AE8DF7A00FA0519 /* AppDelegate.m in Sources */,
-				FD52413D1AE8DF7A00FA0519 /* main.m in Sources */,
+				FD5241721AE8FF1700FA0519 /* DiscoverViewController.m in Sources */,
+				FD5241651AE8E36E00FA0519 /* main.m in Sources */,
+				FD5241641AE8E36E00FA0519 /* AppDelegate.m in Sources */,
+				FD52416F1AE8FEF600FA0519 /* MessageViewController.m in Sources */,
+				FD5241751AE8FF2900FA0519 /* ProfileViewController.m in Sources */,
+				FD52416C1AE8FEE200FA0519 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +268,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FD5241441AE8DF7A00FA0519 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD5241451AE8DF7A00FA0519 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FD5241491AE8DF7A00FA0519 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -286,6 +302,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -326,6 +343,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -343,6 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SinaWeiBo/SinaWeiBo-Prefix.pch";
 				INFOPLIST_FILE = SinaWeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +372,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SinaWeiBo/SinaWeiBo-Prefix.pch";
 				INFOPLIST_FILE = SinaWeiBo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
