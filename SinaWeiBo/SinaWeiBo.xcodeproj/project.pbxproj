@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD120C021AEA004C0049648A /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD120C011AEA004C0049648A /* MainViewController.m */; };
+		FD120C091AEA09740049648A /* TestViewController01.m in Sources */ = {isa = PBXBuildFile; fileRef = FD120C071AEA09740049648A /* TestViewController01.m */; };
+		FD120C0A1AEA09740049648A /* TestViewController01.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD120C081AEA09740049648A /* TestViewController01.xib */; };
+		FD120C0E1AEA0C070049648A /* TestViewController02.m in Sources */ = {isa = PBXBuildFile; fileRef = FD120C0C1AEA0C070049648A /* TestViewController02.m */; };
+		FD120C0F1AEA0C070049648A /* TestViewController02.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD120C0D1AEA0C070049648A /* TestViewController02.xib */; };
 		FD5241481AE8DF7A00FA0519 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5241471AE8DF7A00FA0519 /* Images.xcassets */; };
 		FD52414B1AE8DF7A00FA0519 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD5241491AE8DF7A00FA0519 /* LaunchScreen.xib */; };
 		FD5241571AE8DF7A00FA0519 /* SinaWeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241561AE8DF7A00FA0519 /* SinaWeiBoTests.m */; };
@@ -29,6 +34,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD120C001AEA004C0049648A /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FD120C011AEA004C0049648A /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FD120C061AEA09740049648A /* TestViewController01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController01.h; sourceTree = "<group>"; };
+		FD120C071AEA09740049648A /* TestViewController01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController01.m; sourceTree = "<group>"; };
+		FD120C081AEA09740049648A /* TestViewController01.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController01.xib; sourceTree = "<group>"; };
+		FD120C0B1AEA0C070049648A /* TestViewController02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController02.h; sourceTree = "<group>"; };
+		FD120C0C1AEA0C070049648A /* TestViewController02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController02.m; sourceTree = "<group>"; };
+		FD120C0D1AEA0C070049648A /* TestViewController02.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController02.xib; sourceTree = "<group>"; };
 		FD5241371AE8DF7A00FA0519 /* SinaWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD52413B1AE8DF7A00FA0519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD5241471AE8DF7A00FA0519 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -137,6 +150,14 @@
 				FD5241711AE8FF1700FA0519 /* DiscoverViewController.m */,
 				FD5241731AE8FF2900FA0519 /* ProfileViewController.h */,
 				FD5241741AE8FF2900FA0519 /* ProfileViewController.m */,
+				FD120C001AEA004C0049648A /* MainViewController.h */,
+				FD120C011AEA004C0049648A /* MainViewController.m */,
+				FD120C061AEA09740049648A /* TestViewController01.h */,
+				FD120C071AEA09740049648A /* TestViewController01.m */,
+				FD120C081AEA09740049648A /* TestViewController01.xib */,
+				FD120C0B1AEA0C070049648A /* TestViewController02.h */,
+				FD120C0C1AEA0C070049648A /* TestViewController02.m */,
+				FD120C0D1AEA0C070049648A /* TestViewController02.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -221,7 +242,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD120C0A1AEA09740049648A /* TestViewController01.xib in Resources */,
 				FD52414B1AE8DF7A00FA0519 /* LaunchScreen.xib in Resources */,
+				FD120C0F1AEA0C070049648A /* TestViewController02.xib in Resources */,
 				FD5241481AE8DF7A00FA0519 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,9 +264,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD5241721AE8FF1700FA0519 /* DiscoverViewController.m in Sources */,
+				FD120C091AEA09740049648A /* TestViewController01.m in Sources */,
 				FD5241651AE8E36E00FA0519 /* main.m in Sources */,
 				FD5241641AE8E36E00FA0519 /* AppDelegate.m in Sources */,
 				FD52416F1AE8FEF600FA0519 /* MessageViewController.m in Sources */,
+				FD120C021AEA004C0049648A /* MainViewController.m in Sources */,
+				FD120C0E1AEA0C070049648A /* TestViewController02.m in Sources */,
 				FD5241751AE8FF2900FA0519 /* ProfileViewController.m in Sources */,
 				FD52416C1AE8FEE200FA0519 /* HomeViewController.m in Sources */,
 			);
@@ -432,6 +458,7 @@
 				FD52415C1AE8DF7A00FA0519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD52415D1AE8DF7A00FA0519 /* Build configuration list for PBXNativeTarget "SinaWeiBoTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +467,7 @@
 				FD52415F1AE8DF7A00FA0519 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

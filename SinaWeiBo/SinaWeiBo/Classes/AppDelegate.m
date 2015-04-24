@@ -7,10 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "HomeViewController.h"
-#import "MessageViewController.h"
-#import "DiscoverViewController.h"
-#import "ProfileViewController.h"
+#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -26,47 +23,14 @@
     self.window.frame = [[UIScreen mainScreen] bounds];
     
     //2. 设置根控制器
-    UITabBarController *tabBarVc = [[UITabBarController alloc] init];
-    self.window.rootViewController = tabBarVc;
+    self.window.rootViewController = [[MainViewController alloc] init];
     
-    //2.1 设置子控制器
-    HomeViewController *home = [[HomeViewController alloc] init];
-    [self addChildVc:home tile:@"首页" image:@"tabbar_home" selectedImage:@"tabbar_home_selected"];
-    
-    MessageViewController *messageCenter = [[MessageViewController alloc] init];
-    [self addChildVc:messageCenter tile:@"消息" image:@"tabbar_message_center" selectedImage:@"tabbar_message_center_selected"];
-    
-    DiscoverViewController *discover = [[DiscoverViewController alloc] init];
-    [self addChildVc:discover tile:@"发现" image:@"tabbar_discover" selectedImage:@"tabbar_discover_selected"];
-    
-    ProfileViewController *profile = [[ProfileViewController alloc] init];
-    [self addChildVc:profile tile:@"我" image:@"tabbar_profile" selectedImage:@"tabbar_profile_selected"];
-    
-    //两种方式添加子视图
-    tabBarVc.viewControllers = @[home,messageCenter,discover,profile];
-//    [tabBarVc addChildViewController:vc1];
+   //    [tabBarVc addChildViewController:vc1];
     
     //3.显示窗口
     [self.window makeKeyAndVisible];
     
-    
     return YES;
-}
-
--(void) addChildVc:(UIViewController *) vc tile:(NSString *)title image:(NSString *)image selectedImage:(NSString*)selectedImage{
-    //设置文字的样式
-    NSMutableDictionary *textAlttrs = [NSMutableDictionary dictionary];
-    textAlttrs[NSForegroundColorAttributeName] = HWColor(123,123,123);
-    //设置选中文字颜色
-    NSMutableDictionary *textSelectedAlttrs = [NSMutableDictionary dictionary];
-    textSelectedAlttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
-    
-    vc.tabBarItem.title = title;
-    vc.tabBarItem.image = [UIImage imageNamed:image];
-    vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    vc.view.backgroundColor = HWRandomColor;
-    [vc.tabBarItem setTitleTextAttributes:textAlttrs forState:UIControlStateNormal];
-    [vc.tabBarItem setTitleTextAttributes:textSelectedAlttrs forState:UIControlStateSelected];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
