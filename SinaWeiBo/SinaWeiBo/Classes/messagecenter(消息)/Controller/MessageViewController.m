@@ -18,10 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"写私信" style:UIBarButtonItemStylePlain target:self action:@selector(composeMsg)];
-}
-
--(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
+    //设置右边按钮不可用
     self.navigationItem.rightBarButtonItem.enabled = NO;
 }
 
@@ -33,7 +30,7 @@
 #pragma mark - Target Action
 
 -(void)composeMsg{
-    NSLog(@"%s",__FUNCTION__);
+    SWBLog(@"%s",__FUNCTION__);
 }
 
 #pragma mark - Table view data source

@@ -32,12 +32,12 @@
 #pragma mark - Target Action
 
 -(void)friendsearch{
-    NSLog(@"%s",__FUNCTION__);
+    SWBLog(@"%s",__FUNCTION__);
 }
 
 -(void)pop{
     
-    NSLog(@"%s",__FUNCTION__);
+    SWBLog(@"%s",__FUNCTION__);
 }
 
 #pragma mark - Table view data source

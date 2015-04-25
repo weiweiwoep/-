@@ -17,11 +17,32 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+//    UISearchBar *searchBar = [[UISearchBar alloc] init];
+//    searchBar.height = 30;
+//    searchBar.scopeBarBackgroundImage = [UIImage imageNamed:@"searchbar_textfield_background"];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //自定义搜索框
+    UITextField *searchBar = [[UITextField alloc] init];
+    searchBar.width = self.view.width-10;
+    searchBar.height = 30;
+    searchBar.font = [UIFont systemFontOfSize:15];
+    searchBar.placeholder = @"请输入搜索条件。";
+    searchBar.background = [UIImage imageNamed:@"searchbar_textfield_background"];
+    
+    //设置左边的放大镜图标
+    //注意点：通过initWithImage来创建初始化UIImageView，UIImageView的尺寸默认就等于image的尺寸
+    //UIImageView *searchIcon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"searchbar_textfield_search_icon"]];
+    
+    UIImageView *searchIcon = [[UIImageView alloc] init];
+    //通过init来创建初始化的绝大部份控件，控件都是没有尺寸
+    searchIcon.image = [UIImage imageNamed:@"searchbar_textfield_search_icon"];
+    searchIcon.width = 30;
+    searchIcon.height = 30;
+    searchIcon.contentMode = UIViewContentModeCenter;
+    searchBar.leftView = searchIcon;
+    searchBar.leftViewMode = UITextFieldViewModeAlways;
+    
+    self.navigationItem.titleView = searchBar;
 }
 
 - (void)didReceiveMemoryWarning {

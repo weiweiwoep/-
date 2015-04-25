@@ -54,7 +54,6 @@
     //设置tabBar的图片
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [[UIImage imageNamed:selectedImage] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    vc.view.backgroundColor = HWRandomColor;
     [vc.tabBarItem setTitleTextAttributes:textAlttrs forState:UIControlStateNormal];
     [vc.tabBarItem setTitleTextAttributes:textSelectedAlttrs forState:UIControlStateSelected];
     

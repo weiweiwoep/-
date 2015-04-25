@@ -15,6 +15,12 @@
     #import <Foundation/Foundation.h>
     #import "UIView+Extension.h"
 
+#ifdef DEBUG    //现在处于开发阶段
+#define SWBLog(...) NSLog(__VA_ARGS__)
+#else   //处于发布阶段
+#define SWBLog(...)
+#endif
+
 // RGB颜色
 #define HWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
