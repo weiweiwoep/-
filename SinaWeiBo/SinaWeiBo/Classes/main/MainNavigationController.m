@@ -7,6 +7,7 @@
 //
 
 #import "MainNavigationController.h"
+#import "UIBarButtonItem+Extension.h"
 
 @implementation MainNavigationController
 
@@ -15,17 +16,12 @@
     if (self.viewControllers.count > 0) { //这时push进来的控制器viewController，不是第一个控制器（不是根控制器）
         //隐藏tabbar栏
          viewController.hidesBottomBarWhenPushed = YES;
+        
         //添加leftBarButtonItem按钮
-        UIButton *backBtn = [self CreateBarButtonWithImage:@"navigationbar_back" hightLightedImage:@"navigationbar_back_highlighted"];
-        //设置控制点击事件
-        [backBtn addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-        viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:backBtn];
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(back) image:@"navigationbar_back" hightImage:@"navigationbar_back_highlighted"];
 
         //添加rightBarButtonItem按钮
-        UIButton *moreBtn = [self CreateBarButtonWithImage:@"navigationbar_more" hightLightedImage:@"navigationbar_more_highlighted"];
-        //设置控制点击事件
-        [moreBtn addTarget:self action:@selector(more) forControlEvents:UIControlEventTouchUpInside];
-        viewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:moreBtn];
+        viewController.navigationItem.rightBarButtonItem =  [UIBarButtonItem itemWithTarget:self action:@selector(back) image:@"navigationbar_more" hightImage:@"navigationbar_more_highlighted"];
     }
     [super pushViewController:viewController animated: animated];
 }

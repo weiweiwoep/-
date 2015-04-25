@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "UIBarButtonItem+Extension.h"
 
 @interface HomeViewController ()
 
@@ -16,12 +17,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-   
+    //添加leftBarButtonItem按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(friendsearch) image:@"navigationbar_friendsearch" hightImage:@"navigationbar_friendsearch_highlighted"];
+    
+    //添加rightBarButtonItem按钮
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(pop) image:@"navigationbar_pop" hightImage:@"navigationbar_pop_highlighted"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Target Action
+
+-(void)friendsearch{
+    NSLog(@"%s",__FUNCTION__);
+}
+
+-(void)pop{
+    
+    NSLog(@"%s",__FUNCTION__);
 }
 
 #pragma mark - Table view data source
