@@ -11,6 +11,7 @@
 		FD52414B1AE8DF7A00FA0519 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD5241491AE8DF7A00FA0519 /* LaunchScreen.xib */; };
 		FD5241571AE8DF7A00FA0519 /* SinaWeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241561AE8DF7A00FA0519 /* SinaWeiBoTests.m */; };
 		FD5241641AE8E36E00FA0519 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241621AE8E36E00FA0519 /* AppDelegate.m */; };
+		FD904E421AEBE86C00F9FE9E /* SWBSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FD904E411AEBE86C00F9FE9E /* SWBSearchBar.m */; };
 		FDB4ADED1AEB9CB700ED1783 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4ADC61AEB9CB700ED1783 /* DiscoverViewController.m */; };
 		FDB4ADEE1AEB9CB700ED1783 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4ADCC1AEB9CB700ED1783 /* HomeViewController.m */; };
 		FDB4ADEF1AEB9CB700ED1783 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4ADD01AEB9CB700ED1783 /* main.m */; };
@@ -47,6 +48,8 @@
 		FD5241611AE8E36E00FA0519 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FD5241621AE8E36E00FA0519 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		FD5241661AE8E5C600FA0519 /* SinaWeiBo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SinaWeiBo-Prefix.pch"; sourceTree = "<group>"; };
+		FD904E401AEBE86C00F9FE9E /* SWBSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBSearchBar.h; sourceTree = "<group>"; };
+		FD904E411AEBE86C00F9FE9E /* SWBSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBSearchBar.m; sourceTree = "<group>"; };
 		FDB4ADC51AEB9CB700ED1783 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		FDB4ADC61AEB9CB700ED1783 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		FDB4ADCB1AEB9CB700ED1783 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
@@ -161,6 +164,15 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		FD904E3F1AEBE84E00F9FE9E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD904E401AEBE86C00F9FE9E /* SWBSearchBar.h */,
+				FD904E411AEBE86C00F9FE9E /* SWBSearchBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		FDB4ADC31AEB9CB700ED1783 /* discover(发现) */ = {
 			isa = PBXGroup;
 			children = (
@@ -230,6 +242,7 @@
 		FDB4ADCF1AEB9CB700ED1783 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				FD904E3F1AEBE84E00F9FE9E /* View */,
 				FDB4ADD01AEB9CB700ED1783 /* main.m */,
 				FDB4ADD11AEB9CB700ED1783 /* MainNavigationController.h */,
 				FDB4ADD21AEB9CB700ED1783 /* MainNavigationController.m */,
@@ -448,6 +461,7 @@
 			files = (
 				FDB4ADFB1AEBA7D200ED1783 /* UIBarButtonItem+Extension.m in Sources */,
 				FD5241641AE8E36E00FA0519 /* AppDelegate.m in Sources */,
+				FD904E421AEBE86C00F9FE9E /* SWBSearchBar.m in Sources */,
 				FDB4ADF71AEB9CB700ED1783 /* TestViewController02.m in Sources */,
 				FDB4ADF51AEB9CB700ED1783 /* TestViewController01.m in Sources */,
 				FDB4ADF41AEB9CB700ED1783 /* ProfileViewController.m in Sources */,
