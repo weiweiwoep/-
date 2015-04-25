@@ -11,6 +11,7 @@
 #import "MessageViewController.h"
 #import "DiscoverViewController.h"
 #import "ProfileViewController.h"
+#import "MainNavigationController.h"
 
 @interface MainViewController ()
 
@@ -58,7 +59,7 @@
     [vc.tabBarItem setTitleTextAttributes:textSelectedAlttrs forState:UIControlStateSelected];
     
     //先给视图控制器包装一个导航控制器
-    UINavigationController *nva = [[UINavigationController alloc] initWithRootViewController:vc];
+    MainNavigationController *nva = [[MainNavigationController alloc] initWithRootViewController:vc];
     //两种方式添加子视图
     [self addChildViewController:nva];
 }

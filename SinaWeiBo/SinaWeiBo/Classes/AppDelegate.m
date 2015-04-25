@@ -25,9 +25,7 @@
     //2. 设置根控制器
     self.window.rootViewController = [[MainViewController alloc] init];
     
-   //    [tabBarVc addChildViewController:vc1];
-    
-    //3.显示窗口
+     //3.显示窗口
     [self.window makeKeyAndVisible];
     
     return YES;

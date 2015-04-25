@@ -53,7 +53,7 @@
     testView.title = @"测试控制器";
     //当testView控制器被push的时候，testView所在的tabbarController的tabbar会自动隐藏
     //当testView控制器被pop时，testView所在的tabbarController的tabbar会自动显示出来
-    testView.hidesBottomBarWhenPushed = YES;
+//    testView.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:testView animated:YES];
 }
 

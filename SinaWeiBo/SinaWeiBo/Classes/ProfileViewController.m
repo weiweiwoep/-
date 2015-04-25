@@ -7,6 +7,7 @@
 //
 
 #import "ProfileViewController.h"
+#import "TestViewController02.h"
 
 @interface ProfileViewController ()
 
@@ -16,17 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem =[[UIBarButtonItem alloc] initWithTitle:@"设置" style:UIBarButtonItemStylePlain target:self action:@selector(setting)];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Target Action
+-(void)setting{
+    TestViewController02 *view = [[TestViewController02 alloc] init];
+    view.title = @"测试2";
+    [self.navigationController pushViewController:view animated:YES];
 }
 
 #pragma mark - Table view data source

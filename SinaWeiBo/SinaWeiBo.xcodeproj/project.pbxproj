@@ -21,6 +21,8 @@
 		FD52416F1AE8FEF600FA0519 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD52416E1AE8FEF600FA0519 /* MessageViewController.m */; };
 		FD5241721AE8FF1700FA0519 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241711AE8FF1700FA0519 /* DiscoverViewController.m */; };
 		FD5241751AE8FF2900FA0519 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241741AE8FF2900FA0519 /* ProfileViewController.m */; };
+		FDB4ADBC1AEB848300ED1783 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4ADBB1AEB848300ED1783 /* UIView+Extension.m */; };
+		FDB4ADC21AEB8CB300ED1783 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4ADC11AEB8CB300ED1783 /* MainNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		FD5241711AE8FF1700FA0519 /* DiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
 		FD5241731AE8FF2900FA0519 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		FD5241741AE8FF2900FA0519 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		FDB4ADBA1AEB848300ED1783 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		FDB4ADBB1AEB848300ED1783 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		FDB4ADC01AEB8CB300ED1783 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		FDB4ADC11AEB8CB300ED1783 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,10 @@
 				FD120C0B1AEA0C070049648A /* TestViewController02.h */,
 				FD120C0C1AEA0C070049648A /* TestViewController02.m */,
 				FD120C0D1AEA0C070049648A /* TestViewController02.xib */,
+				FDB4ADBA1AEB848300ED1783 /* UIView+Extension.h */,
+				FDB4ADBB1AEB848300ED1783 /* UIView+Extension.m */,
+				FDB4ADC01AEB8CB300ED1783 /* MainNavigationController.h */,
+				FDB4ADC11AEB8CB300ED1783 /* MainNavigationController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -263,6 +273,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB4ADBC1AEB848300ED1783 /* UIView+Extension.m in Sources */,
 				FD5241721AE8FF1700FA0519 /* DiscoverViewController.m in Sources */,
 				FD120C091AEA09740049648A /* TestViewController01.m in Sources */,
 				FD5241651AE8E36E00FA0519 /* main.m in Sources */,
@@ -270,6 +281,7 @@
 				FD52416F1AE8FEF600FA0519 /* MessageViewController.m in Sources */,
 				FD120C021AEA004C0049648A /* MainViewController.m in Sources */,
 				FD120C0E1AEA0C070049648A /* TestViewController02.m in Sources */,
+				FDB4ADC21AEB8CB300ED1783 /* MainNavigationController.m in Sources */,
 				FD5241751AE8FF2900FA0519 /* ProfileViewController.m in Sources */,
 				FD52416C1AE8FEE200FA0519 /* HomeViewController.m in Sources */,
 			);
