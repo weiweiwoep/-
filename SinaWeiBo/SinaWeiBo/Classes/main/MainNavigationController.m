@@ -11,6 +11,22 @@
 
 @implementation MainNavigationController
 
++(void)initialize{
+    //设置整个项目所有的item的主题样式
+    UIBarButtonItem *item = [UIBarButtonItem appearance];
+    
+    //设置普通状态
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+    textAttrs[NSForegroundColorAttributeName] = [UIColor orangeColor];
+    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    [item setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
+    //设置普通状态
+    NSMutableDictionary *disabletextAttrs = [NSMutableDictionary dictionary];
+    disabletextAttrs[NSForegroundColorAttributeName] = [UIColor lightGrayColor];
+    disabletextAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    [item setTitleTextAttributes:disabletextAttrs forState:UIControlStateDisabled];
+}
+
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated{
     viewController.hidesBottomBarWhenPushed = NO;
     if (self.viewControllers.count > 0) { //这时push进来的控制器viewController，不是第一个控制器（不是根控制器）
