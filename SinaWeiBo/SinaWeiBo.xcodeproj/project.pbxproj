@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD01B8131B135C9E001B6202 /* SWDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FD01B8121B135C9E001B6202 /* SWDropdownMenu.m */; };
 		FD5241481AE8DF7A00FA0519 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5241471AE8DF7A00FA0519 /* Images.xcassets */; };
 		FD52414B1AE8DF7A00FA0519 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD5241491AE8DF7A00FA0519 /* LaunchScreen.xib */; };
 		FD5241571AE8DF7A00FA0519 /* SinaWeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241561AE8DF7A00FA0519 /* SinaWeiBoTests.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD01B8111B135C9E001B6202 /* SWDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWDropdownMenu.h; sourceTree = "<group>"; };
+		FD01B8121B135C9E001B6202 /* SWDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWDropdownMenu.m; sourceTree = "<group>"; };
 		FD5241371AE8DF7A00FA0519 /* SinaWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD52413B1AE8DF7A00FA0519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD5241471AE8DF7A00FA0519 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 			children = (
 				FD904E401AEBE86C00F9FE9E /* SWBSearchBar.h */,
 				FD904E411AEBE86C00F9FE9E /* SWBSearchBar.m */,
+				FD01B8111B135C9E001B6202 /* SWDropdownMenu.h */,
+				FD01B8121B135C9E001B6202 /* SWDropdownMenu.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB4ADFB1AEBA7D200ED1783 /* UIBarButtonItem+Extension.m in Sources */,
+				FD01B8131B135C9E001B6202 /* SWDropdownMenu.m in Sources */,
 				FD5241641AE8E36E00FA0519 /* AppDelegate.m in Sources */,
 				FD904E421AEBE86C00F9FE9E /* SWBSearchBar.m in Sources */,
 				FDB4ADF71AEB9CB700ED1783 /* TestViewController02.m in Sources */,

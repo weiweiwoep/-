@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import "UIBarButtonItem+Extension.h"
+#import "SWDropdownMenu.h"
 
 @interface HomeViewController ()
 
@@ -22,6 +23,19 @@
     
     //添加rightBarButtonItem按钮
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithTarget:self action:@selector(pop) image:@"navigationbar_pop" hightImage:@"navigationbar_pop_highlighted"];
+    
+    //修改navigation的TitleView
+    UIButton *titleButton = [[UIButton alloc] init];
+    titleButton.width = 150;
+    titleButton.height = 30;
+    [titleButton setTitle:@"首页" forState:UIControlStateNormal];
+    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+    titleButton.imageEdgeInsets = UIEdgeInsetsMake(0, 70, 0, 0);
+    titleButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 40);
+    titleButton.titleLabel.font = [UIFont boldSystemFontOfSize:17];
+    [titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [titleButton addTarget:self action:@selector(titleClick) forControlEvents:UIControlEventTouchUpInside];
+    self.navigationItem.titleView = titleButton;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,6 +53,15 @@
     
     SWBLog(@"%s",__FUNCTION__);
 }
+
+-(void)titleClick{
+    
+    //创建下拉菜单
+    SWDropdownMenu *meun = [SWDropdownMenu menu];
+    //显示
+    [meun show];
+}
+
 
 #pragma mark - Table view data source
 
