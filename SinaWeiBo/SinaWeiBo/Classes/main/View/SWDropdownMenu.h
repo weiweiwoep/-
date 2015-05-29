@@ -32,6 +32,6 @@
 //控件内容控制器
 @property(nonatomic,strong) UIViewController *contentController;
 
-@property(nonatomic,strong) id<SWDropdownMenuDelegate> delegate;
+@property(nonatomic,weak) id<SWDropdownMenuDelegate> delegate;
 
 @end

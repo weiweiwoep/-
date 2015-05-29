@@ -31,6 +31,7 @@
     titleButton.height = 30;
     [titleButton setTitle:@"首页" forState:UIControlStateNormal];
     [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateSelected];
     titleButton.imageEdgeInsets = UIEdgeInsetsMake(0, 70, 0, 0);
     titleButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 40);
     titleButton.titleLabel.font = [UIFont boldSystemFontOfSize:17];
@@ -90,16 +91,28 @@
 
 #pragma mark - SWDropdownMenuDelegate代理方法
 
+/**
+ * 下拉菜单被销毁
+ **/
 -(void)dropdownMenuDidDismiss:(SWDropdownMenu *)menu{
     //4.让剪头向下
     UIButton *titleButton = (UIButton *)self.navigationItem.titleView;
-    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+    //方式1
+//    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+    //方式2
+    titleButton.selected =  NO;
 }
 
+/**
+ * 下拉菜单显示
+ **/
 -(void)dropdownMenuDidShow:(SWDropdownMenu *)menu{
     //4.让剪头向上
     UIButton *titleButton = (UIButton *)self.navigationItem.titleView;
-    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateNormal];
+    //方式1
+//    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateNormal];
+    //方式2
+    titleButton.selected =  YES;
 }
 
 /*
