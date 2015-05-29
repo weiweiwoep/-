@@ -26,6 +26,8 @@
 		FDB4ADF71AEB9CB700ED1783 /* TestViewController02.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4ADEB1AEB9CB700ED1783 /* TestViewController02.m */; };
 		FDB4ADF81AEB9CB700ED1783 /* TestViewController02.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB4ADEC1AEB9CB700ED1783 /* TestViewController02.xib */; };
 		FDB4ADFB1AEBA7D200ED1783 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4ADFA1AEBA7D200ED1783 /* UIBarButtonItem+Extension.m */; };
+		FDFDD0DB1B1755A900F98F86 /* SWTitleMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFDD0DA1B1755A900F98F86 /* SWTitleMenuTableViewController.m */; };
+		FDFDD0DE1B182A8B00F98F86 /* SWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFDD0DD1B182A8B00F98F86 /* SWTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,10 +60,10 @@
 		FDB4ADCB1AEB9CB700ED1783 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		FDB4ADCC1AEB9CB700ED1783 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		FDB4ADD01AEB9CB700ED1783 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FDB4ADD11AEB9CB700ED1783 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
-		FDB4ADD21AEB9CB700ED1783 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
-		FDB4ADD31AEB9CB700ED1783 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		FDB4ADD41AEB9CB700ED1783 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FDB4ADD11AEB9CB700ED1783 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainNavigationController.h; path = ../MainNavigationController.h; sourceTree = "<group>"; };
+		FDB4ADD21AEB9CB700ED1783 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainNavigationController.m; path = ../MainNavigationController.m; sourceTree = "<group>"; };
+		FDB4ADD31AEB9CB700ED1783 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		FDB4ADD41AEB9CB700ED1783 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
 		FDB4ADD71AEB9CB700ED1783 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
 		FDB4ADD81AEB9CB700ED1783 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
 		FDB4ADDD1AEB9CB700ED1783 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
@@ -76,6 +78,10 @@
 		FDB4ADEC1AEB9CB700ED1783 /* TestViewController02.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController02.xib; sourceTree = "<group>"; };
 		FDB4ADF91AEBA7D200ED1783 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		FDB4ADFA1AEBA7D200ED1783 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		FDFDD0D91B1755A900F98F86 /* SWTitleMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTitleMenuTableViewController.h; sourceTree = "<group>"; };
+		FDFDD0DA1B1755A900F98F86 /* SWTitleMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTitleMenuTableViewController.m; sourceTree = "<group>"; };
+		FDFDD0DC1B182A8B00F98F86 /* SWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTabBar.h; sourceTree = "<group>"; };
+		FDFDD0DD1B182A8B00F98F86 /* SWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,12 @@
 		FD904E3F1AEBE84E00F9FE9E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FDFDD0DC1B182A8B00F98F86 /* SWTabBar.h */,
+				FDFDD0DD1B182A8B00F98F86 /* SWTabBar.m */,
+				FDB4ADD11AEB9CB700ED1783 /* MainNavigationController.h */,
+				FDB4ADD21AEB9CB700ED1783 /* MainNavigationController.m */,
+				FDB4ADD31AEB9CB700ED1783 /* MainViewController.h */,
+				FDB4ADD41AEB9CB700ED1783 /* MainViewController.m */,
 				FD904E401AEBE86C00F9FE9E /* SWBSearchBar.h */,
 				FD904E411AEBE86C00F9FE9E /* SWBSearchBar.m */,
 				FD01B8111B135C9E001B6202 /* SWDropdownMenu.h */,
@@ -215,7 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				FDB4ADCA1AEB9CB700ED1783 /* Controller */,
-				FDB4ADCD1AEB9CB700ED1783 /* Model */,
 				FDB4ADCE1AEB9CB700ED1783 /* View */,
 			);
 			path = "home(首页)";
@@ -230,16 +241,11 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		FDB4ADCD1AEB9CB700ED1783 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		FDB4ADCE1AEB9CB700ED1783 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FDFDD0D91B1755A900F98F86 /* SWTitleMenuTableViewController.h */,
+				FDFDD0DA1B1755A900F98F86 /* SWTitleMenuTableViewController.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,12 +253,10 @@
 		FDB4ADCF1AEB9CB700ED1783 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				FDFDD0E11B183DD500F98F86 /* Model */,
+				FDFDD0E01B183DC100F98F86 /* Controller */,
 				FD904E3F1AEBE84E00F9FE9E /* View */,
 				FDB4ADD01AEB9CB700ED1783 /* main.m */,
-				FDB4ADD11AEB9CB700ED1783 /* MainNavigationController.h */,
-				FDB4ADD21AEB9CB700ED1783 /* MainNavigationController.m */,
-				FDB4ADD31AEB9CB700ED1783 /* MainViewController.h */,
-				FDB4ADD41AEB9CB700ED1783 /* MainViewController.m */,
 			);
 			path = main;
 			sourceTree = "<group>";
@@ -361,6 +365,20 @@
 				FDB4ADEC1AEB9CB700ED1783 /* TestViewController02.xib */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		FDFDD0E01B183DC100F98F86 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FDFDD0E11B183DD500F98F86 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -473,7 +491,9 @@
 				FDB4ADF41AEB9CB700ED1783 /* ProfileViewController.m in Sources */,
 				FDB4ADF11AEB9CB700ED1783 /* MainViewController.m in Sources */,
 				FDB4ADED1AEB9CB700ED1783 /* DiscoverViewController.m in Sources */,
+				FDFDD0DB1B1755A900F98F86 /* SWTitleMenuTableViewController.m in Sources */,
 				FDB4ADEF1AEB9CB700ED1783 /* main.m in Sources */,
+				FDFDD0DE1B182A8B00F98F86 /* SWTabBar.m in Sources */,
 				FDB4ADEE1AEB9CB700ED1783 /* HomeViewController.m in Sources */,
 				FDB4ADF01AEB9CB700ED1783 /* MainNavigationController.m in Sources */,
 				FDB4ADF31AEB9CB700ED1783 /* UIView+Extension.m in Sources */,

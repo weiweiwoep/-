@@ -9,8 +9,9 @@
 #import "HomeViewController.h"
 #import "UIBarButtonItem+Extension.h"
 #import "SWDropdownMenu.h"
+#import "SWTitleMenuTableViewController.h"
 
-@interface HomeViewController ()
+@interface HomeViewController ()<SWDropdownMenuDelegate>
 
 @end
 
@@ -34,7 +35,7 @@
     titleButton.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 40);
     titleButton.titleLabel.font = [UIFont boldSystemFontOfSize:17];
     [titleButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [titleButton addTarget:self action:@selector(titleClick) forControlEvents:UIControlEventTouchUpInside];
+    [titleButton addTarget:self action:@selector(titleClick:) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.titleView = titleButton;
 }
 
@@ -54,12 +55,22 @@
     SWBLog(@"%s",__FUNCTION__);
 }
 
--(void)titleClick{
+-(void)titleClick:(UIButton *) titleButton{
     
-    //创建下拉菜单
-    SWDropdownMenu *meun = [SWDropdownMenu menu];
-    //显示
-    [meun show];
+    //1.创建下拉菜单
+    SWDropdownMenu *menu = [SWDropdownMenu menu];
+    menu.delegate = self;
+    //2.设置内容
+//    meun.content = [UIButton buttonWithType:UIButtonTypeContactAdd];
+//    meun.content = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, 0, 100)];
+
+    SWTitleMenuTableViewController *vc = [[SWTitleMenuTableViewController alloc] init];
+    vc.view.height = 44*3;
+    vc.view.width = 100;
+    menu.contentController = vc;
+    
+    //3.显示
+    [menu showFrom:titleButton];
 }
 
 
@@ -75,6 +86,20 @@
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 0;
+}
+
+#pragma mark - SWDropdownMenuDelegate代理方法
+
+-(void)dropdownMenuDidDismiss:(SWDropdownMenu *)menu{
+    //4.让剪头向下
+    UIButton *titleButton = (UIButton *)self.navigationItem.titleView;
+    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
+}
+
+-(void)dropdownMenuDidShow:(SWDropdownMenu *)menu{
+    //4.让剪头向上
+    UIButton *titleButton = (UIButton *)self.navigationItem.titleView;
+    [titleButton setImage:[UIImage imageNamed:@"navigationbar_arrow_up"] forState:UIControlStateNormal];
 }
 
 /*

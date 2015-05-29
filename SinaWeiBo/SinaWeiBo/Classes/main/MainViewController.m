@@ -12,8 +12,9 @@
 #import "DiscoverViewController.h"
 #import "ProfileViewController.h"
 #import "MainNavigationController.h"
+#import "SWTabBar.h"
 
-@interface MainViewController ()
+@interface MainViewController ()<SWTabBarDelegate>
 
 -(void)addChildVc:(UIViewController *) vc tile:(NSString *)title image:(NSString *)image selectedImage:(NSString*)selectedImage;
 
@@ -35,8 +36,17 @@
     
     ProfileViewController *profile = [[ProfileViewController alloc] init];
     [self addChildVc:profile tile:@"我" image:@"tabbar_profile" selectedImage:@"tabbar_profile_selected"];
+    
+    //更换系统自带的tabbar
+    SWTabBar *tabBar = [[SWTabBar alloc] init];
+    tabBar.delegate = self;
+    [self setValue:tabBar forKeyPath:@"tabBar"];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+}
 
 -(void) addChildVc:(UIViewController *) vc tile:(NSString *)title image:(NSString *)image selectedImage:(NSString*)selectedImage{
     //设置导航栏标题
@@ -63,5 +73,11 @@
     [self addChildViewController:nva];
 }
 
+#pragma mark - SWTabBarDelegate 代理方法
+-(void)tabBarDidClickPlusButton:(SWTabBar *)tabBar{
+    UIViewController *vc = [[UIViewController alloc] init];
+    vc.view.backgroundColor = [UIColor redColor];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end
