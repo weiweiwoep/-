@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FD01B8131B135C9E001B6202 /* SWDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = FD01B8121B135C9E001B6202 /* SWDropdownMenu.m */; };
+		FD0BA6791B185A2300EADDC9 /* SWNewfeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD0BA6781B185A2300EADDC9 /* SWNewfeatureViewController.m */; };
 		FD5241481AE8DF7A00FA0519 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5241471AE8DF7A00FA0519 /* Images.xcassets */; };
 		FD52414B1AE8DF7A00FA0519 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD5241491AE8DF7A00FA0519 /* LaunchScreen.xib */; };
 		FD5241571AE8DF7A00FA0519 /* SinaWeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241561AE8DF7A00FA0519 /* SinaWeiBoTests.m */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		FD01B8111B135C9E001B6202 /* SWDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWDropdownMenu.h; sourceTree = "<group>"; };
 		FD01B8121B135C9E001B6202 /* SWDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWDropdownMenu.m; sourceTree = "<group>"; };
+		FD0BA6771B185A2300EADDC9 /* SWNewfeatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWNewfeatureViewController.h; sourceTree = "<group>"; };
+		FD0BA6781B185A2300EADDC9 /* SWNewfeatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWNewfeatureViewController.m; sourceTree = "<group>"; };
 		FD5241371AE8DF7A00FA0519 /* SinaWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD52413B1AE8DF7A00FA0519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD5241471AE8DF7A00FA0519 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -102,6 +105,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD0BA6751B1859CA00EADDC9 /* Newfeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				FD0BA6761B1859CA00EADDC9 /* Controller */,
+			);
+			path = "Newfeature(新特性)";
+			sourceTree = "<group>";
+		};
+		FD0BA6761B1859CA00EADDC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD0BA6771B185A2300EADDC9 /* SWNewfeatureViewController.h */,
+				FD0BA6781B185A2300EADDC9 /* SWNewfeatureViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		FD52412E1AE8DF7A00FA0519 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +180,7 @@
 		FD5241601AE8E36E00FA0519 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				FD0BA6751B1859CA00EADDC9 /* Newfeature(新特性) */,
 				FDB4ADC31AEB9CB700ED1783 /* discover(发现) */,
 				FDB4ADC91AEB9CB700ED1783 /* home(首页) */,
 				FDB4ADCF1AEB9CB700ED1783 /* main */,
@@ -491,6 +512,7 @@
 				FDB4ADF41AEB9CB700ED1783 /* ProfileViewController.m in Sources */,
 				FDB4ADF11AEB9CB700ED1783 /* MainViewController.m in Sources */,
 				FDB4ADED1AEB9CB700ED1783 /* DiscoverViewController.m in Sources */,
+				FD0BA6791B185A2300EADDC9 /* SWNewfeatureViewController.m in Sources */,
 				FDFDD0DB1B1755A900F98F86 /* SWTitleMenuTableViewController.m in Sources */,
 				FDB4ADEF1AEB9CB700ED1783 /* main.m in Sources */,
 				FDFDD0DE1B182A8B00F98F86 /* SWTabBar.m in Sources */,

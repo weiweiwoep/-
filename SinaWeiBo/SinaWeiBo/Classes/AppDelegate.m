@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "SWNewfeatureViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,8 @@
     self.window.frame = [[UIScreen mainScreen] bounds];
     
     //2. 设置根控制器
-    self.window.rootViewController = [[MainViewController alloc] init];
+//    self.window.rootViewController = [[MainViewController alloc] init];
+    self.window.rootViewController = [[SWNewfeatureViewController alloc] init];
     
      //3.显示窗口
     [self.window makeKeyAndVisible];
