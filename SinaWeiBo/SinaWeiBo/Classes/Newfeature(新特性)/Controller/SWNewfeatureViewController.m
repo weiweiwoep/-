@@ -9,6 +9,10 @@
 #import "SWNewfeatureViewController.h"
 #define SWNewfeatureCount 4
 
+@interface SWNewfeatureViewController()<UIScrollViewDelegate>
+@property(nonatomic,weak)UIPageControl *pageControl;
+@end
+
 @implementation SWNewfeatureViewController
 
 -(void)viewDidLoad{
@@ -37,6 +41,7 @@
     scrollView.bounces = NO;    //去除弹簧效果
     scrollView.pagingEnabled = YES; //分页效果
     scrollView.showsHorizontalScrollIndicator = NO; //去掉水平滚动条
+    scrollView.delegate = self;
     
     //添加pageControl:分页，展示目前是第几页
     UIPageControl *pageControl = [[UIPageControl alloc] init];
@@ -46,11 +51,20 @@
     pageControl.currentPageIndicatorTintColor = HWColor(253,98,42);
     pageControl.pageIndicatorTintColor = HWColor(189, 189, 189);
     [self.view addSubview:pageControl];
+    self.pageControl = pageControl;
     
     //PageControl 就算没有设置尺寸，也能显示，这是它与其它控件的特殊之处
     //    pageControl.width = 100;
     //    pageControl.height = 50;
     //    pageControl.userInteractionEnabled = NO;
+}
+
+#pragma mark - UIScrollView代理实现
+
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    double page = scrollView.contentOffset.x / scrollView.width;
+    
+    self.pageControl.currentPage = (int)(page + 0.5);
 }
 
 @end
