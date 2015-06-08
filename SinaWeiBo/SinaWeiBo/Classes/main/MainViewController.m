@@ -39,8 +39,17 @@
     
     //更换系统自带的tabbar
     SWTabBar *tabBar = [[SWTabBar alloc] init];
-    tabBar.delegate = self;
+//    tabBar.delegate = self; 看下面注释
     [self setValue:tabBar forKeyPath:@"tabBar"];
+    
+    //[self setValue:tabBar forKeyPath:@"tabBar"];这行代码执行后，tabBar 的delegate就是MainViewController，这也说明，不用再设置tabBar.delegate = self;
+    /**
+     1.如果tabBar设置完delegate后，再执行下面代码修改delegate，就会报错
+     tabBar.delegate = self;
+     2.如果再次修改tabBar的delegate属性，就会报下面错误
+     错误信息：Changing the delegate of a tabbar managed by a tab bar controller is not allowed.
+     错误意思：不允许修改tabBar的delegate属性（这个TabBar是被TabBarViewController所管理的）
+     **/
 }
 
 -(void)viewDidAppear:(BOOL)animated{
