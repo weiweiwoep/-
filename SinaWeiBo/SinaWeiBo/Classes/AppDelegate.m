@@ -24,10 +24,22 @@
     self.window.frame = [[UIScreen mainScreen] bounds];
     
     //2. 设置根控制器
-//    self.window.rootViewController = [[MainViewController alloc] init];
-    self.window.rootViewController = [[SWNewfeatureViewController alloc] init];
     
-     //3.显示窗口
+    NSString *key = @"CFBundleVersion";
+    //上一次使用的版本（存储在泥沙盒中的版本号）
+    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:key];
+    //当前版本号（从info.plist中获得）
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
+    
+    if([currentVersion isEqualToString:lastVersion]){ //版本号相同
+        self.window.rootViewController = [[MainViewController alloc] init];
+    }else{  //版本号不同
+        self.window.rootViewController = [[SWNewfeatureViewController alloc] init];
+        //将版本号存进沙盒
+        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    //3.显示窗口
     [self.window makeKeyAndVisible];
     
     return YES;

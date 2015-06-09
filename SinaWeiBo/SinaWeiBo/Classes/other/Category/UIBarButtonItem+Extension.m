@@ -10,8 +10,7 @@
 
 @implementation UIBarButtonItem (Extension)
 
-+(UIBarButtonItem *)itemWithTarget:(id)target action:(SEL)action image:(NSString *)image
-                    hightImage:(NSString *)hightImage{
++(UIBarButtonItem *)itemWithTarget:(id)target action:(SEL)action image:(NSString *)image hightImage:(NSString *)hightImage{
     
     UIButton *barBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     //设置图片
