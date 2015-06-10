@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "MainViewController.h"
 #import "SWNewfeatureViewController.h"
+#import "SWOAuthViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,27 +19,28 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-   
-    //1.创建窗口
+
+//    //1.创建窗口
     self.window = [[UIWindow alloc] init];
     self.window.frame = [[UIScreen mainScreen] bounds];
-    
-    //2. 设置根控制器
-    
-    NSString *key = @"CFBundleVersion";
-    //上一次使用的版本（存储在泥沙盒中的版本号）
-    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:key];
-    //当前版本号（从info.plist中获得）
-    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
-    
-    if([currentVersion isEqualToString:lastVersion]){ //版本号相同
-        self.window.rootViewController = [[MainViewController alloc] init];
-    }else{  //版本号不同
-        self.window.rootViewController = [[SWNewfeatureViewController alloc] init];
-        //将版本号存进沙盒
-        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
-        [[NSUserDefaults standardUserDefaults] synchronize];
-    }
+    self.window.rootViewController = [[SWOAuthViewController alloc] init];
+//
+//    //2. 设置根控制器
+//    
+//    NSString *key = @"CFBundleVersion";
+//    //上一次使用的版本（存储在泥沙盒中的版本号）
+//    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:key];
+//    //当前版本号（从info.plist中获得）
+//    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
+//    
+//    if([currentVersion isEqualToString:lastVersion]){ //版本号相同
+//        self.window.rootViewController = [[MainViewController alloc] init];
+//    }else{  //版本号不同
+//        self.window.rootViewController = [[SWNewfeatureViewController alloc] init];
+//        //将版本号存进沙盒
+//        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
+//        [[NSUserDefaults standardUserDefaults] synchronize];
+//    }
     //3.显示窗口
     [self.window makeKeyAndVisible];
     
