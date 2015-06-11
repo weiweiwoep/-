@@ -23,6 +23,10 @@
 		FD5241571AE8DF7A00FA0519 /* SinaWeiBoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241561AE8DF7A00FA0519 /* SinaWeiBoTests.m */; };
 		FD5241641AE8E36E00FA0519 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5241621AE8E36E00FA0519 /* AppDelegate.m */; };
 		FD904E421AEBE86C00F9FE9E /* SWBSearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FD904E411AEBE86C00F9FE9E /* SWBSearchBar.m */; };
+		FD937E5F1B2908F500B3018D /* SWAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = FD937E5E1B2908F500B3018D /* SWAccount.m */; };
+		FD937E661B29218C00B3018D /* MBProgressHUD+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = FD937E621B29218C00B3018D /* MBProgressHUD+MJ.m */; };
+		FD937E671B29218C00B3018D /* MBProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FD937E631B29218C00B3018D /* MBProgressHUD.bundle */; };
+		FD937E681B29218C00B3018D /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FD937E651B29218C00B3018D /* MBProgressHUD.m */; };
 		FDADEE051B27476400D3F642 /* SWOAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDADEE041B27476400D3F642 /* SWOAuthViewController.m */; };
 		FDB4ADED1AEB9CB700ED1783 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4ADC61AEB9CB700ED1783 /* DiscoverViewController.m */; };
 		FDB4ADEE1AEB9CB700ED1783 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4ADCC1AEB9CB700ED1783 /* HomeViewController.m */; };
@@ -87,6 +91,13 @@
 		FD5241661AE8E5C600FA0519 /* SinaWeiBo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SinaWeiBo-Prefix.pch"; sourceTree = "<group>"; };
 		FD904E401AEBE86C00F9FE9E /* SWBSearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWBSearchBar.h; sourceTree = "<group>"; };
 		FD904E411AEBE86C00F9FE9E /* SWBSearchBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWBSearchBar.m; sourceTree = "<group>"; };
+		FD937E5D1B2908F500B3018D /* SWAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWAccount.h; sourceTree = "<group>"; };
+		FD937E5E1B2908F500B3018D /* SWAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWAccount.m; sourceTree = "<group>"; };
+		FD937E611B29218C00B3018D /* MBProgressHUD+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+MJ.h"; sourceTree = "<group>"; };
+		FD937E621B29218C00B3018D /* MBProgressHUD+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+MJ.m"; sourceTree = "<group>"; };
+		FD937E631B29218C00B3018D /* MBProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MBProgressHUD.bundle; sourceTree = "<group>"; };
+		FD937E641B29218C00B3018D /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		FD937E651B29218C00B3018D /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		FDADEE031B27476400D3F642 /* SWOAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWOAuthViewController.h; sourceTree = "<group>"; };
 		FDADEE041B27476400D3F642 /* SWOAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWOAuthViewController.m; sourceTree = "<group>"; };
 		FDB4ADC51AEB9CB700ED1783 /* DiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
@@ -269,9 +280,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FD937E5C1B2908CB00B3018D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD937E5D1B2908F500B3018D /* SWAccount.h */,
+				FD937E5E1B2908F500B3018D /* SWAccount.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD937E601B29218C00B3018D /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				FD937E611B29218C00B3018D /* MBProgressHUD+MJ.h */,
+				FD937E621B29218C00B3018D /* MBProgressHUD+MJ.m */,
+				FD937E631B29218C00B3018D /* MBProgressHUD.bundle */,
+				FD937E641B29218C00B3018D /* MBProgressHUD.h */,
+				FD937E651B29218C00B3018D /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		FDADEE011B27472700D3F642 /* OAuth(授权) */ = {
 			isa = PBXGroup;
 			children = (
+				FD937E5C1B2908CB00B3018D /* Model */,
 				FDADEE021B27472700D3F642 /* Controller */,
 			);
 			path = "OAuth(授权)";
@@ -413,6 +446,7 @@
 		FDB4ADDF1AEB9CB700ED1783 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				FD937E601B29218C00B3018D /* MBProgressHUD */,
 				FD2261AD1B27F8D100E1A7F9 /* AFNetworking */,
 			);
 			path = Lib;
@@ -560,6 +594,7 @@
 			files = (
 				FDB4ADF61AEB9CB700ED1783 /* TestViewController01.xib in Resources */,
 				FD52414B1AE8DF7A00FA0519 /* LaunchScreen.xib in Resources */,
+				FD937E671B29218C00B3018D /* MBProgressHUD.bundle in Resources */,
 				FDB4ADF81AEB9CB700ED1783 /* TestViewController02.xib in Resources */,
 				FD5241481AE8DF7A00FA0519 /* Images.xcassets in Resources */,
 			);
@@ -579,12 +614,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD937E661B29218C00B3018D /* MBProgressHUD+MJ.m in Sources */,
 				FDB4ADFB1AEBA7D200ED1783 /* UIBarButtonItem+Extension.m in Sources */,
 				FD01B8131B135C9E001B6202 /* SWDropdownMenu.m in Sources */,
 				FD2261C51B27F8D100E1A7F9 /* AFSecurityPolicy.m in Sources */,
 				FD2261C21B27F8D100E1A7F9 /* AFHTTPRequestOperationManager.m in Sources */,
 				FD2261C11B27F8D100E1A7F9 /* AFHTTPRequestOperation.m in Sources */,
 				FD5241641AE8E36E00FA0519 /* AppDelegate.m in Sources */,
+				FD937E681B29218C00B3018D /* MBProgressHUD.m in Sources */,
 				FD904E421AEBE86C00F9FE9E /* SWBSearchBar.m in Sources */,
 				FDB4ADF71AEB9CB700ED1783 /* TestViewController02.m in Sources */,
 				FDB4ADF51AEB9CB700ED1783 /* TestViewController01.m in Sources */,
@@ -604,6 +641,7 @@
 				FDB4ADF01AEB9CB700ED1783 /* MainNavigationController.m in Sources */,
 				FDB4ADF31AEB9CB700ED1783 /* UIView+Extension.m in Sources */,
 				FDADEE051B27476400D3F642 /* SWOAuthViewController.m in Sources */,
+				FD937E5F1B2908F500B3018D /* SWAccount.m in Sources */,
 				FD2261C41B27F8D100E1A7F9 /* AFNetworkReachabilityManager.m in Sources */,
 				FDB4ADF21AEB9CB700ED1783 /* MessageViewController.m in Sources */,
 			);

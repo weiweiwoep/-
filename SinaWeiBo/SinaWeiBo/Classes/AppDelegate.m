@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "SWNewfeatureViewController.h"
 #import "SWOAuthViewController.h"
+#import "SWAccount.h"
 
 @interface AppDelegate ()
 
@@ -19,28 +20,37 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    
+    NSLog(@"沙盒路径：%@",NSHomeDirectory());
 //    //1.创建窗口
     self.window = [[UIWindow alloc] init];
     self.window.frame = [[UIScreen mainScreen] bounds];
-    self.window.rootViewController = [[SWOAuthViewController alloc] init];
-//
-//    //2. 设置根控制器
-//    
-//    NSString *key = @"CFBundleVersion";
-//    //上一次使用的版本（存储在泥沙盒中的版本号）
-//    NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:key];
-//    //当前版本号（从info.plist中获得）
-//    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
-//    
-//    if([currentVersion isEqualToString:lastVersion]){ //版本号相同
-//        self.window.rootViewController = [[MainViewController alloc] init];
-//    }else{  //版本号不同
-//        self.window.rootViewController = [[SWNewfeatureViewController alloc] init];
-//        //将版本号存进沙盒
-//        [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
-//        [[NSUserDefaults standardUserDefaults] synchronize];
-//    }
+
+    //2. 设置根控制器
+    
+    //沙盒路径
+    NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *path = [doc stringByAppendingPathComponent:@"account.archive"];
+    SWAccount *account = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    if (account) {
+        NSString *key = @"CFBundleVersion";
+        //上一次使用的版本（存储在泥沙盒中的版本号）
+        NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:key];
+        //当前版本号（从info.plist中获得）
+        NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
+        
+        if([currentVersion isEqualToString:lastVersion]){ //版本号相同
+            self.window.rootViewController = [[MainViewController alloc] init];
+        }else{  //版本号不同
+            self.window.rootViewController = [[SWNewfeatureViewController alloc] init];
+            //将版本号存进沙盒
+            [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
+            [[NSUserDefaults standardUserDefaults] synchronize];
+        }
+    }else{
+        self.window.rootViewController = [[SWOAuthViewController alloc] init];
+    }
+    
     //3.显示窗口
     [self.window makeKeyAndVisible];
     
