@@ -10,8 +10,7 @@
 #import "AFNetworking.h"
 #import "SWAccount.h"
 #import "MBProgressHUD+MJ.h"
-#import "MainViewController.h"
-#import "SWNewfeatureViewController.h"
+#import "SWAccountTool.h"
 
 @interface SWOAuthViewController()<UIWebViewDelegate>
 
@@ -108,32 +107,19 @@
    parameters:params
       success:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
           [MBProgressHUD hideHUD];
-          //沙盒路径
-          NSString *doc = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
-          NSString *path = [doc stringByAppendingPathComponent:@"account.archive"];
           
           //将返回的账号数据转换为模型，存进沙盒
           SWAccount *account = [SWAccount accountWithDic:responseObject];
-          //自定义对象的存储必须用NSKeyArchiver,不再有什么writeToFile方法
-          [NSKeyedArchiver archiveRootObject:account toFile:path];
+          
+          //存储账号信息
+          [SWAccountTool saveAccount:account];
+          
           //以josn形式存储到文件中
           //[responseObject writeToFile:path atomically:YES];
           
-          NSString *key = @"CFBundleVersion";
-          //上一次使用的版本（存储在泥沙盒中的版本号）
-          NSString *lastVersion = [[NSUserDefaults standardUserDefaults] objectForKey:key];
-          //当前版本号（从info.plist中获得）
-          NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
-          
+          //切换根控制器
           UIWindow *window = [UIApplication sharedApplication].keyWindow;
-          if([currentVersion isEqualToString:lastVersion]){ //版本号相同
-              window.rootViewController = [[MainViewController alloc] init];
-          }else{  //版本号不同
-              window.rootViewController = [[SWNewfeatureViewController alloc] init];
-              //将版本号存进沙盒
-              [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];
-              [[NSUserDefaults standardUserDefaults] synchronize];
-          }
+          [window swithRootViewController];
       } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
           [MBProgressHUD hideHUD];
           SWBLog(@"请求失败！->%@",error);

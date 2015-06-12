@@ -29,6 +29,7 @@
     [encode encodeObject:self.access_token forKey:@"access_token"];
     [encode encodeObject:self.expires_in forKey:@"expires_in"];
     [encode encodeObject:self.uid forKey:@"uid"];
+    [encode encodeObject:self.create_time forKey:@"create_time"];
 }
 
 /**
@@ -38,8 +39,9 @@
 -(id)initWithCoder:(NSCoder *)decoder{
     if(self = [super init]){
         self.access_token = [decoder decodeObjectForKey:@"access_token"];
-        self.access_token = [decoder decodeObjectForKey:@"expires_in"];
-        self.access_token = [decoder decodeObjectForKey:@"uid"];
+        self.expires_in = [decoder decodeObjectForKey:@"expires_in"];
+        self.uid = [decoder decodeObjectForKey:@"uid"];
+        self.create_time = [decoder decodeObjectForKey:@"create_time"];
     }
     return self;
 }

@@ -41,6 +41,8 @@
 		FDB4ADF71AEB9CB700ED1783 /* TestViewController02.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4ADEB1AEB9CB700ED1783 /* TestViewController02.m */; };
 		FDB4ADF81AEB9CB700ED1783 /* TestViewController02.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB4ADEC1AEB9CB700ED1783 /* TestViewController02.xib */; };
 		FDB4ADFB1AEBA7D200ED1783 /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB4ADFA1AEBA7D200ED1783 /* UIBarButtonItem+Extension.m */; };
+		FDB7FE5F1B2AAC2800A6A354 /* SWAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB7FE5E1B2AAC2800A6A354 /* SWAccountTool.m */; };
+		FDB80EDC1B2ABB4B00688CA6 /* UIWindow+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FDB80EDB1B2ABB4B00688CA6 /* UIWindow+Extension.m */; };
 		FDFDD0DB1B1755A900F98F86 /* SWTitleMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFDD0DA1B1755A900F98F86 /* SWTitleMenuTableViewController.m */; };
 		FDFDD0DE1B182A8B00F98F86 /* SWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFDD0DD1B182A8B00F98F86 /* SWTabBar.m */; };
 /* End PBXBuildFile section */
@@ -123,6 +125,10 @@
 		FDB4ADEC1AEB9CB700ED1783 /* TestViewController02.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewController02.xib; sourceTree = "<group>"; };
 		FDB4ADF91AEBA7D200ED1783 /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		FDB4ADFA1AEBA7D200ED1783 /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		FDB7FE5D1B2AAC2800A6A354 /* SWAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWAccountTool.h; sourceTree = "<group>"; };
+		FDB7FE5E1B2AAC2800A6A354 /* SWAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWAccountTool.m; sourceTree = "<group>"; };
+		FDB80EDA1B2ABB4B00688CA6 /* UIWindow+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+Extension.h"; sourceTree = "<group>"; };
+		FDB80EDB1B2ABB4B00688CA6 /* UIWindow+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Extension.m"; sourceTree = "<group>"; };
 		FDFDD0D91B1755A900F98F86 /* SWTitleMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTitleMenuTableViewController.h; sourceTree = "<group>"; };
 		FDFDD0DA1B1755A900F98F86 /* SWTitleMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTitleMenuTableViewController.m; sourceTree = "<group>"; };
 		FDFDD0DC1B182A8B00F98F86 /* SWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTabBar.h; sourceTree = "<group>"; };
@@ -304,6 +310,7 @@
 		FDADEE011B27472700D3F642 /* OAuth(授权) */ = {
 			isa = PBXGroup;
 			children = (
+				FDB7FE5C1B2AABFF00A6A354 /* Tool */,
 				FD937E5C1B2908CB00B3018D /* Model */,
 				FDADEE021B27472700D3F642 /* Controller */,
 			);
@@ -439,6 +446,8 @@
 				FDB4ADDE1AEB9CB700ED1783 /* UIView+Extension.m */,
 				FDB4ADF91AEBA7D200ED1783 /* UIBarButtonItem+Extension.h */,
 				FDB4ADFA1AEBA7D200ED1783 /* UIBarButtonItem+Extension.m */,
+				FDB80EDA1B2ABB4B00688CA6 /* UIWindow+Extension.h */,
+				FDB80EDB1B2ABB4B00688CA6 /* UIWindow+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -496,6 +505,15 @@
 				FDB4ADEC1AEB9CB700ED1783 /* TestViewController02.xib */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		FDB7FE5C1B2AABFF00A6A354 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				FDB7FE5D1B2AAC2800A6A354 /* SWAccountTool.h */,
+				FDB7FE5E1B2AAC2800A6A354 /* SWAccountTool.m */,
+			);
+			path = Tool;
 			sourceTree = "<group>";
 		};
 		FDFDD0E01B183DC100F98F86 /* Controller */ = {
@@ -614,6 +632,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB7FE5F1B2AAC2800A6A354 /* SWAccountTool.m in Sources */,
 				FD937E661B29218C00B3018D /* MBProgressHUD+MJ.m in Sources */,
 				FDB4ADFB1AEBA7D200ED1783 /* UIBarButtonItem+Extension.m in Sources */,
 				FD01B8131B135C9E001B6202 /* SWDropdownMenu.m in Sources */,
@@ -626,6 +645,7 @@
 				FDB4ADF71AEB9CB700ED1783 /* TestViewController02.m in Sources */,
 				FDB4ADF51AEB9CB700ED1783 /* TestViewController01.m in Sources */,
 				FDB4ADF41AEB9CB700ED1783 /* ProfileViewController.m in Sources */,
+				FDB80EDC1B2ABB4B00688CA6 /* UIWindow+Extension.m in Sources */,
 				FDB4ADF11AEB9CB700ED1783 /* MainViewController.m in Sources */,
 				FDB4ADED1AEB9CB700ED1783 /* DiscoverViewController.m in Sources */,
 				FD0BA6791B185A2300EADDC9 /* SWNewfeatureViewController.m in Sources */,

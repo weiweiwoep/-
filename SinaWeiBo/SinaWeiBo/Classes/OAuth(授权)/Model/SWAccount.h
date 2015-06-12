@@ -28,6 +28,11 @@
  **/
 @property (nonatomic, copy) NSString *uid;
 
+/**
+ *  创建时间
+ **/
+@property (nonatomic, strong) NSDate *create_time;
+
 +(instancetype)accountWithDic:(NSDictionary *)dict;
 
 @end
